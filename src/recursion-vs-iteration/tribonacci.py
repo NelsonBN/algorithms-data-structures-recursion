@@ -2,7 +2,7 @@ def tribonacci_recursive(n: int): # Time complexity: O(3^n), Space complexity: O
     # Base case
     if n == 0:
         return 0
-    if n == 1 or n == 2:
+    if n <= 2:
         return 1
 
     # Recursive case
@@ -28,5 +28,5 @@ def tribonacci_iteration(n: int): # Time complexity: O(n), Space complexity: O(1
     return c
 
 
-print(f'recursive(5) = {tribonacci_recursive(11)}') # 274
-print(f'iteration(5) = {tribonacci_iteration(11)}') # 274
+print(f'recursive(5) = {tribonacci_recursive(1001)}') # 274
+# print(f'iteration(5) = {tribonacci_iteration(11)}') # 274
